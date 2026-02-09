@@ -55,7 +55,7 @@ const TaskPage = () => {
         document.addEventListener('mousedown', handleClickOutside);
         return () => document.removeEventListener('mousedown', handleClickOutside);
     }, []);
-
+   
     // Streak timer countdown
     useEffect(() => {
         const calculateTimeLeft = () => {
@@ -186,6 +186,11 @@ const TaskPage = () => {
         }
     };
 
+    const handleCloseBadge = () => {
+        setShowBadgePopup(false);
+        fetchTaskData()
+        console.log("Badge popup closed!");
+    };
     const createMockData = () => {
         const mockData = {
             tasks: Array.from({ length: 60 }, (_, i) => ({
@@ -503,7 +508,7 @@ const TaskPage = () => {
                                 <h4 className="text-lg font-bold text-amber-700 mb-2">First Step</h4>
                                 <p className="text-gray-700 mb-4 text-xs">You've completed your first task!</p>
                                 <div className="flex flex-col sm:flex-row gap-2 justify-center">
-                                    <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} onClick={() => setShowBadgePopup(false)}
+                                    <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} onClick={handleCloseBadge}
                                         className="px-5 py-2 bg-gradient-to-r from-amber-500 to-orange-500 text-white rounded-lg font-semibold hover:shadow-lg text-xs">
                                         Awesome!
                                     </motion.button>
