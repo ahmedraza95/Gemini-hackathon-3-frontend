@@ -512,7 +512,7 @@ const TaskPage = () => {
                                         className="px-5 py-2 bg-gradient-to-r from-amber-500 to-orange-500 text-white rounded-lg font-semibold hover:shadow-lg text-xs">
                                         Awesome!
                                     </motion.button>
-                                    <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} onClick={() => setShowBadgePopup(false)}
+                                    <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} onClick={handleCloseBadge}
                                         className="px-5 py-2 bg-white border-2 border-amber-300 text-amber-700 rounded-lg font-semibold hover:bg-amber-50 text-xs">
                                         View All Badges
                                     </motion.button>
