@@ -319,7 +319,7 @@ const Header = () => {
                             </motion.div>
                             <div className="hidden sm:block">
                                 <span className="text-sm font-bold bg-gradient-to-r from-indigo-600 to-blue-600 bg-clip-text text-transparent">
-                                    ExplainMyProblem.ai
+                                    Transform.ai
                                 </span>
                             </div>
                         </NavLink>

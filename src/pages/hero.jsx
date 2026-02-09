@@ -36,7 +36,7 @@ const Hero = () => {
                     <div className="flex items-center gap-2">
                         <Sparkles className="w-5 h-5 text-indigo-500" />
                         <span className="font-semibold text-gray-800">
-                            ExplainMyProblem.ai
+                            Transform.ai
                         </span>
                     </div>
                     <div className="w-1 h-1 bg-gray-300 rounded-full" />

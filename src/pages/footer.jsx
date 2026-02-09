@@ -47,7 +47,7 @@ const Footer = () => {
                                 <Sparkles className="w-6 h-6 text-white" />
                             </div>
                             <span className="text-xl font-bold text-gray-900">
-                                ExplainMyProblem.ai
+                                Transforma.ai
                             </span>
                         </div>
                         <div className="hidden md:flex items-center gap-4">
@@ -64,7 +64,7 @@ const Footer = () => {
                         </p>
                         <div className="flex items-center justify-center md:justify-end gap-4">
                             <span className="text-xs text-gray-500">
-                                © {new Date().getFullYear()} ExplainMyProblem.ai
+                                © {new Date().getFullYear()} Transform.ai
                             </span>
                             <span className="text-xs text-gray-400">•</span>
                             <a href="#" className="text-xs text-gray-500 hover:text-gray-900 transition-colors">
